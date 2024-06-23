@@ -39,7 +39,7 @@ const Content = () => {
         //       </div>
         //     </div>
         //   </div>
-        <div className=' min-w[80%vw]  h-[900px]'> 
+        <div className=' min-w[80%vw] '> 
           <div className=' mt-[40px]  flex flex-col items-center '>
             <div className=' w-[300px] h-[300px] rounded-full bg-[#002B5A] flex justify-center items-center'>
               <img src="/profile.png" alt="" className=' w-[250px] h-[250px] rounded-full'/>

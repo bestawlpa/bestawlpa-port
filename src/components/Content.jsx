@@ -1,0 +1,36 @@
+import { useMediaQuery } from 'react-responsive';
+
+const Content = () => {
+  const isPC = useMediaQuery({ minWidth: 768 });
+
+  return (
+    <div className = {`flex flex-col justify-start mt-[80px] ${isPC ? 'min-w-[80vw]  ' : 'min-w-[100vw]  '} dm-sans-text`}>
+
+      <div className=' บน  flex justify-around'> 
+        <div className=' w-[600px] h-[400px] flex justify-center items-center relative'>
+          <div className=' w-[380px] h-[380px] rounded-full bg-[#002B5A] flex justify-center items-center absolute  '>
+            <img src="/profile.png" alt="profile-image" className=' h-[280px] w-[280px] rounded-full' />
+          </div>
+          
+        </div>
+        <div className=' w-[600px] h-[400px] flex flex-col rounded-lg justify-center items-end font-black text-[35px] overflow-clip '>
+          <div className=' w-[500px] text-[#FFF5E1]'>
+            <h1>Hey, I'm bestawIpa</h1>
+            <p>I like to craft solid frontend product, turning ideas into real life products is my calling.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className='ล่าง'>
+
+      </div>
+    </div>
+  )
+}
+
+export default Content
+
+
+
+
+

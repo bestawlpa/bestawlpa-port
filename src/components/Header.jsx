@@ -121,9 +121,9 @@ function Header() {
             
             {dropdownOpen && (
               <div className="absolute top-[50px] rounded-md w-[60px] right-[10px] bg-gray-800 flex flex-col items-center dm-sans-text">
-                <a href="work" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center border-b border-gray-600">Work</a>
-                <a href="about" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center border-b border-gray-600">About</a>
-                <a href="contact" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center">Contact</a>
+                <Link to="/project" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center border-b border-gray-600">Project</Link>
+                <Link to="/about" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center border-b border-gray-600">About</Link>
+                <Link to="/contact" className="text-white flex justify-end pr-1 h-[34px] text-[13px] py-2 w-full text-center">Contact</Link>
               </div>
             )}
           </div>

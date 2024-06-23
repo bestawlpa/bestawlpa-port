@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const isPC = useMediaQuery({ minWidth: 768 });
@@ -15,7 +16,7 @@ function Header() {
       {isPC? (
         <div className=" flex text-[50px] h-[100px] font-bold my-[60px] dm-sans-text">
           <div className=' flex w-[50%]  justify-around font-black'>
-            <a href="/" className=' flex w-full justify-around text-[#F19ED2] text-[50px]'>
+            <Link to="/" className=' flex w-full justify-around text-[#F19ED2] text-[50px]'>
 
               <div className=' w-[50px] h-[120px] flex items-center'>
                 <ul className=' w-[50px] h-[80px] bg-white hover:bg-[#F1F8E8] hover:text-[#55AD9B] text-center rounded-lg'>b</ul>
@@ -52,14 +53,14 @@ function Header() {
               <div className=' w-[50px] h-[120px] flex items-center'>
                 <ul className=' w-[50px] h-[80px] bg-white hover:bg-[#40A2E3] hover:text-[#FFF6E9] text-center rounded-lg'>a</ul>
               </div>
-            </a>
+            </Link>
           </div>
 
           <div  className=' flex w-[50%]  justify-end items-end text-[30px] font-bold relative'>
             <div className=' flex w-[400px] h-[130px] justify-around items-end absolute top-4 '>
-              <a href="project" className=' w-[130px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Project</a>
-              <a href="about" className=' w-[120px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>About</a>
-              <a href="contact" className=' w-[140px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Contact</a>
+              <Link to="/project" className=' w-[130px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Project</Link>
+              <Link to="/about" className=' w-[120px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>About</Link>
+              <Link to="/contact" className=' w-[140px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Contact</Link>
             </div>
             
           </div>
@@ -135,46 +136,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-// const Header = () => {
-//   const isPC = useMediaQuery({ minWidth: 768 });
-//   const [dropdownOpen, setDropdownOpen] = useState(false);
-
-//   const toggleDropdown = () => {
-//     setDropdownOpen(!dropdownOpen);
-//   };
-
-//   return (
-//     <header className="bg-gray-800 p-4">
-//       {isPC ? (
-//         <nav className="flex justify-center space-x-4">
-//           <a href="#home" className="text-white hover:underline">Home</a>
-//           <a href="#about" className="text-white hover:underline">About</a>
-//           <a href="#services" className="text-white hover:underline">Services</a>
-//           <a href="#contact" className="text-white hover:underline">Contact</a>
-//         </nav>
-//       ) : (
-//         <div className="relative">
-//           <button
-//             onClick={toggleDropdown}
-//             className="text-white bg-gray-800 px-4 py-2 rounded-md w-[20px] h-[20px]"
-//           >
-//             Menu
-//           </button>
-//           {dropdownOpen && (
-//             <div className="absolute top-12 left-0 w-full bg-gray-800 flex flex-col items-center">
-//               <a href="#home" className="text-white py-2 w-full text-center border-b border-gray-600">Home</a>
-//               <a href="#about" className="text-white py-2 w-full text-center border-b border-gray-600">About</a>
-//               <a href="#services" className="text-white py-2 w-full text-center border-b border-gray-600">Services</a>
-//               <a href="#contact" className="text-white py-2 w-full text-center">Contact</a>
-//             </div>
-//           )}
-//         </div>
-//       )}
-//     </header>
-//   );
-// };
-
-// export default Header;

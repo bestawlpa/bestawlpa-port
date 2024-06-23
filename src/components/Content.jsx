@@ -40,12 +40,12 @@ const Content = () => {
         //     </div>
         //   </div>
         <div className=' min-w[80%vw]  h-[900px]'> 
-          <div className=' mt-[40px] h-[500px] flex flex-col items-center '>
+          <div className=' mt-[40px]  flex flex-col items-center '>
             <div className=' w-[300px] h-[300px] rounded-full bg-[#002B5A] flex justify-center items-center'>
               <img src="/profile.png" alt="" className=' w-[250px] h-[250px] rounded-full'/>
             </div>
 
-            <div className=' mt-[20px] w-[230px] flex justify-center text-[#FFF5E1] font-black text-[12px]'>
+            <div className=' mt-[20px] w-[230px] flex justify-center text-[#FFF5E1] font-black text-[18px]'>
               <div>
                 <h1>Hey, I'm bestawIpa</h1>
                 <p>I like to craft solid frontend product, turning ideas into real life products is my calling.</p>

@@ -22,7 +22,7 @@ const About = () => {
             </div>
             <div className=" max-w-[600px]  text-[#FFF6E9] font-semibold text-[21px] -mt-[20px]">
                 <h2>As a civil engineer with experience in managing construction projects, I have developed strong skills in problem analysis, planning, and teamwork. Transitioning to a Developer, I apply these skills in a new perspective. I am proficient in HTML, JavaScript, and CSS, and have created a 
-                  <span className=" text-[#F0DE36]"><a href="https://main--testtododoto.netlify.app/"> To-Do List </a></span>project using React and Firebase.
+                  <span className=" text-[#F0DE36]"><a href="https://demo-todos-nine.vercel.app/"> To-Do List </a></span>project using React and Firebase.
                 </h2>
                 <br />
                 <h2>I also developed an e-commerce site using Next.js, Node.js, Express, and MongoDB, which has enhanced my knowledge and passion for development.</h2>

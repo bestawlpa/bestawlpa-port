@@ -12,15 +12,15 @@ export default function App() {
       element: <Home />
     },
     {
-      path: "project",
+      path: "/project",
       element: <Project />
     },
     {
-      path: "about",
+      path: "/about",
       element: <About />
     },
     {
-      path: "contact",
+      path: "/contact",
       element: <Contact />
     }
   ]);

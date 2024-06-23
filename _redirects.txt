@@ -1,0 +1,4 @@
+/*    /index.html   200
+/assets/*    /index.html   200
+/styles/*    /index.html   200
+/scripts/*    /index.html   200

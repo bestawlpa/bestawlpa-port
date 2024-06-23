@@ -1,4 +1,4 @@
 /*    /index.html   200
-/assets/*    /index.html   200
-/styles/*    /index.html   200
-/scripts/*    /index.html   200
+/project   /index.html   200
+/about     /index.html   200
+/contact   /index.html   200

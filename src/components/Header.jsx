@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
 function Header() {
-  const isPC = useMediaQuery({ minWidth: 768 });
+  const isPC = useMediaQuery({ minWidth: 1024 });
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -12,10 +12,10 @@ function Header() {
   };
 
   return (
-    <div className={`${isPC ? 'min-w-[80vw] max-w-[1200px] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px]'} `}>
+    <div className={`${isPC ? 'min-w-[80vw] max-w-[1200px] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px] bg-yellow-200'} `}>
       {isPC? (
         <div className=" flex text-[50px] h-[100px] font-bold my-[60px] dm-sans-text">
-          <div className=' flex w-[50%]  justify-around font-black'>
+          <div className=' flex min-w-[932px]  justify-around font-black'>
             <Link to="/" className=' flex w-full justify-around text-[#F19ED2] text-[50px]'>
 
               <div className=' w-[50px] h-[120px] flex items-center'>

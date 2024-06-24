@@ -39,7 +39,7 @@ function Header() {
               </div>
               
               <div className=' w-[50px] h-[120px] flex items-center'>
-                <ul className=' w-[50px] h-[100px] bg-white hover:bg-[#CBFFA9] hover:text-[#FF9B9B] text-center rounded-lg'>w</ul>
+                <ul className=' w-[50px] h-[100px] bg-white hover:bg-[#91DDCF] hover:text-[#FDFFC2] text-center rounded-lg'>w</ul>
               </div>
               
               <div className=' w-[50px] h-[120px] flex items-center'>

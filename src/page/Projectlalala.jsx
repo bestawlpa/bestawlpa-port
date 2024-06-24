@@ -16,11 +16,11 @@ const Projectlalala = () => {
          
               
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/public/home-page.png" className="absolute block w-[1000px] h-[400px] rounded-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
+                <img src="/public/home-page.png?v=123" className="absolute block w-[1000px] h-[400px] rounded-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
               </div>
 
               <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="/public/profile.png" className="rounded-xl absolute block w-[1000px] h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
+                <img src="/public/profile.png?v=123" className="rounded-xl absolute block w-[1000px] h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
               </div>
 
         
@@ -52,7 +52,7 @@ const Projectlalala = () => {
     
             <div className="relative h-[430px] overflow-hidden rounded-lg ">
          
-              // รูปแบบที่ถูกแก้ไข
+              
 <div className="hidden duration-700 ease-in-out" data-carousel-item>
   <img src="/home-page.png" className="absolute block w-[1000px] h-[400px] rounded-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
 </div>

@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import { useMediaQuery } from 'react-responsive';
+
 const About = () => {
   const isPC = useMediaQuery({ minWidth: 1024 });
 

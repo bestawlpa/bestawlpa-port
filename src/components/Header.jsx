@@ -112,9 +112,9 @@ function Header() {
             </a>
           </div>
           
-          <div className="relative w-full flex items-center justify-end top-5">
+          <div className="relative w-full flex items-center justify-end top-1">
             <div>
-              <button onClick={toggleDropdown} className="text-black w-[25px] h-[25px] bg-slate-50 rounded-md flex justify-center items-center mr-[10px] ">
+              <button onClick={toggleDropdown} className="text-[#A91D3A] hover:text-[#FCE09B] w-[30px] h-[30px] bg-[#FFFFFF] hover:bg-[#186F65] rounded-full flex justify-center items-center mr-[10px] ">
                 <MenuIcon />
               </button>
             </div>

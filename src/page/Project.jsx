@@ -43,7 +43,7 @@ const Project = () => {
               </Link>
               <div className="p-5">
                 <Link to="https://demo-todos-nine.vercel.app/">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">To-doList</h5>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">To-doList</h5>
                 </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">The To-Do List allows you to add tasks that you need to complete. Additionally, you can edit and delete tasks as needed.</p>
               </div>
@@ -55,7 +55,7 @@ const Project = () => {
               </Link>
               <div className="p-5">
                 <Link to="/lalala">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lalala-shop Ecommerce</h5>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">lalala-shop Ecommerce</h5>
                 </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
               </div>

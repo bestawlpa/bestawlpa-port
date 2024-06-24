@@ -3,7 +3,7 @@ import Home from "./page/Home";
 import About from "./page/About"
 import Contact from "./page/Contact";
 import Project from "./page/Project";
-
+import Projectlalala from "./page/Projectlalala";
 
 export default function App() { 
   const router = createBrowserRouter([
@@ -22,7 +22,15 @@ export default function App() {
     {
       path: "/contact",
       element: <Contact />
-    }
+    },
+    {
+      path: "/contact",
+      element: <Contact />
+    },
+    {
+      path: "/lalala",
+      element: <Projectlalala />
+    },     
   ]);
 
   return (

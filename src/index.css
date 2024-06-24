@@ -25,3 +25,48 @@ body {
   font-style: normal;
 }
 
+.dot  {
+  animation: roll 800ms infinite cubic-bezier(.25, .72, .52, .98);
+}
+
+@keyframes roll {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-150px);
+  }
+
+  60% {
+    transform: translateY(-75px);
+  }
+};
+
+
+.dot-2 {
+  animation: wong 2s infinite cubic-bezier(.20, .67, .47, .85);
+}
+
+@keyframes wong {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-150px);
+  }
+
+  60% {
+    transform: translateY(-75px);
+  }
+}

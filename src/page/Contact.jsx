@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
       ):(
         <div className=" h-[400px] flex flex-col items-center  pt-[60px]  mt-[80px] border-t-4 border-[#FFF6C3]">
-          <div className=" w-[280px] h-[100px] bg-white rounded-md flex flex-col justify-around py-[20px] px-2 text-[16px] font-semibold">
+          <div className=" w-[300px] h-[100px] bg-white rounded-md flex flex-col justify-around py-[20px] px-2 text-[16px] font-semibold">
             <h1><GitHubIcon /><span className=" ml-4 text-red-700 "><Link to="https://github.com/bestawlpa" >bestawlpa</Link></span></h1>
             <h1><EmailIcon /><span className=" ml-4 text-red-700 ">apiwat.aunna@gmail.com</span></h1>
           </div>

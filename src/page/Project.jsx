@@ -37,7 +37,7 @@ const Project = () => {
         <div className=" my-[40px] flex justify-center">
           <div className="my-[80px] w-[80%] min-h-[700px] flex flex-col justify-around items-center">
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-20">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg  w-[300px] mb-20">
               <Link to="https://demo-todos-nine.vercel.app/">
                 <img className="rounded-t-lg" src="/todoimg.png" alt="" />
               </Link>
@@ -49,12 +49,12 @@ const Project = () => {
               </div>
             </div>
 
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-              <Link to="https://demo-todos-nine.vercel.app/">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg w-[300px] ">
+              <Link to="/lalala">
                 <img className="rounded-t-lg" src="/home-page.png" alt="" />
               </Link>
               <div className="p-5">
-                <Link to="https://demo-todos-nine.vercel.app/">
+                <Link to="/lalala">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">lalala-shop Ecommerce</h5>
                 </Link>
                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>

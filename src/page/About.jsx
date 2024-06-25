@@ -8,7 +8,7 @@ const About = () => {
     <div className={`${isPC ? 'min-w-[80vw] max-w-[1200px] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px] '} `}>
       <Header />
       {isPC? (
-        <div className=" w-full h-[1000px]  my-[40px] border-t-4 border-[#FFF6C3] ">
+        <div className=" w-full h-[1000px] mt-20 border-t-4 border-[#FFF6C3] ">
           <div className=" flex flex-col items-center my-[40px]">
             <div>
               <h1 className=" font-extrabold text-[60px] text-[#FBF8DD]">ABOUT</h1>

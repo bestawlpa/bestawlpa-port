@@ -36,13 +36,13 @@ const Projectlalala = () => {
       {isPC? (
           <div className=' mt-24 flex flex-col'>
             <div className=' flex flex-col min-w-[1200px] items-center  mb-12'>
-              <div  className=' text-[50px] font-extrabold text-[#141E46]'>
+              <div  className=' text-[50px] font-extrabold text-[#F1F7B5]'>
                 <h1>LALALA-SHOP</h1>
               </div>
               <div className=' max-w-[900px] font-semibold mt-6 text-[20px] text-[#F5F7F8]'>
                 <p>LALALA-SHOP is an online shopping platform designed to offer a wide range of products, including electronics, apparel, and household items. 
                   The platform aims to provide a seamless shopping experience with user-friendly navigation and a secure checkout process.</p>
-                <p className=' mt-4 text-[25px] text-[#141E46]'>Features</p>
+                <p className=' mt-4 text-[28px] font-bold text-[#F1F7B5]'>Features</p>
                 <ul className=' '>
                   <li>- Homepage</li>
                   <li>- Product Listing</li>
@@ -55,7 +55,7 @@ const Projectlalala = () => {
                 </ul>
                 <div className=' mt-4 flex flex-col'>
                   <p>You can use this template as a starting point and modify it according to your specific needs</p>
-                  <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' text-[#2B2A4C]'>bestawlpa</Link></p>
+                  <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' font-semibold text-[#2B2A4C]'>bestawlpa</Link></p>
                 </div>
               </div>
             </div>
@@ -75,13 +75,13 @@ const Projectlalala = () => {
           <div className='mt-12 flex flex-col items-center justify-center'>
             <div className=' max-w-[600px]'>
               <div className='flex justify-center mb-12'>
-                <h1 className='text-[40px] font-bold text-[#141E46]'>LALALA-SHOP</h1>
+                <h1 className='text-[40px] font-bold text-[#F1F7B5]'>LALALA-SHOP</h1>
               </div>
 
               <div className=' max-w-[370px] mx-auto font-semibold mt-6 text-[20px] text-[#F5F7F8]'>
                 <p>LALALA-SHOP is an online shopping platform designed to offer a wide range of products, including electronics, apparel, and household items. 
                   The platform aims to provide a seamless shopping experience with user-friendly navigation and a secure checkout process.</p>
-                <p className=' mt-4 text-[25px] text-[#141E46]'>Features</p>
+                <p className=' mt-4 text-[28px] text-[#F1F7B5]'>Features</p>
                 <ul className=' '>
                   <li>- Homepage</li>
                   <li>- Product Listing</li>

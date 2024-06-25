@@ -8,7 +8,7 @@ const About = () => {
     <div className={`${isPC ? 'min-w-[80vw] max-w-[1200px] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px] '} `}>
       <Header />
       {isPC? (
-        <div className=" w-full h-[1000px] mt-20 border-t-4 border-[#FFF6C3] ">
+        <div className=" w-full  mt-20 border-t-4 border-[#FFF6C3] ">
           <div className=" flex flex-col items-center my-[40px]">
             <div>
               <h1 className=" font-extrabold text-[60px] text-[#FBF8DD]">ABOUT</h1>
@@ -31,6 +31,25 @@ const About = () => {
                 <h2>I also developed an e-commerce site using Next.js, Node.js, Express, and MongoDB, which has enhanced my knowledge and passion for development.</h2>
                 <br />
                 <h2>Switching from civil engineering to development has allowed me to acquire new skills and apply my engineering background in software development, enabling me to create effective solutions and add value to organizations.</h2>
+              </div>
+            </div>
+
+            <div className=" min-w-[600px] mt-10 h-[250px] flex flex-col items-center">
+              <h2 className=" font-extrabold text-[30px] text-[#FBF8DD]">SKILL</h2>
+              <div className=" mt-10 text-[#E7D37F]  h-full ">
+                <div className=" flex justify-around min-w-[600px] h-[70px] text-[18px] font-bold ">
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">HTML</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">CSS</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Javascript</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">React</div>
+                </div>
+                
+                <div className=" flex justify-around min-w-[600px] h-[70px] text-[18px] font-bold my-8">
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Next.js</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Node.js</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Firebase</div>
+                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">MongoDb</div>
+                </div> 
               </div>
             </div>
 
@@ -60,6 +79,26 @@ const About = () => {
                 <br />
                 <h2>Switching from civil engineering to development has allowed me to acquire new skills and apply my engineering background in software development, enabling me to create effective solutions and add value to organizations.</h2>
               </div>
+
+              <div className=" max-w-[350px] mt-10 h-[250px] flex flex-col items-center">
+                <h2 className=" font-extrabold text-[30px] text-[#FBF8DD]">SKILL</h2>
+                <div className=" mt-10 text-[#E7D37F]  h-full text-[14px]">
+                  <div className=" flex justify-around min-w-[400px] h-[50px]  font-bold ">
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">HTML</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">CSS</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Javascript</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">React</div>
+                  </div>
+                
+                  <div className=" flex justify-around min-w-[300px] h-[50px] ] font-bold my-8">
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Next.js</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Node.js</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Firebase</div>
+                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">MongoDb</div>
+                  </div> 
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>

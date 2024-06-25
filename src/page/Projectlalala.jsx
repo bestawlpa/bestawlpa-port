@@ -201,24 +201,24 @@ const Projectlalala = () => {
           </div>
         </div>
       ) : (
-        <div className='mt-12'>
+        <div className='mt-12 max-w-[600px] flex flex-col items-center justify-center'>
           <div className='flex justify-center mb-12'>
             <h1 className='text-[40px] font-bold text-[#F5F7F8]'>LALALA-SHOP</h1>
           </div>
           <div className="grid grid-cols-1 gap-5 my-10 mx-auto max-w-[600px]">
             {images.map((src, index) => (
               <div key={index} className='flex justify-center' onClick={() => openModal(src)}>
-                <img className="h-[250px] w-[400px] rounded-lg cursor-pointer" src={src} alt={`Gallery image ${index + 1}`} />
+                <img className="h-[250px] w-[380px] rounded-lg cursor-pointer" src={src} alt={`Gallery image ${index + 1}`} />
               </div>
             ))}
           </div>
         </div>
       )}
-      {modalOpen && (
+      {/* {modalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={closeModal}>
           <img className="max-h-[90vh] max-w-[90vw]" src={currentImage} alt="Full screen" />
         </div>
-      )}
+      )} */}
     </div>
   );
 };

@@ -56,11 +56,11 @@ function Header() {
             </Link>
           </div>
 
-          <div  className=' flex w-[50%]  justify-end items-end text-[30px] font-bold relative'>
+          <div  className=' flex w-[50%]  justify-end items-end text-[32px] font-extrabold relative'>
             <div className=' flex w-[400px] h-[130px] justify-around items-end absolute top-4 '>
-              <Link to="/project" className=' w-[130px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Project</Link>
-              <Link to="/about" className=' w-[120px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>About</Link>
-              <Link to="/contact" className=' w-[140px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#FFF5E1] flex justify-center items-center rounded-full'>Contact</Link>
+              <Link to="/project" className=' w-[130px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844]  text-[#F1F7B5] flex justify-center items-center rounded-full'>Project</Link>
+              <Link to="/about" className=' w-[120px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#F1F7B5] flex justify-center items-center rounded-full'>About</Link>
+              <Link to="/contact" className=' w-[140px] h-[60px] hover:bg-[#FFF5E1] hover:text-[#0C1844] text-[#F1F7B5] flex justify-center items-center rounded-full'>Contact</Link>
             </div>
             
           </div>

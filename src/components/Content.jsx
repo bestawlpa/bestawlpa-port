@@ -14,7 +14,7 @@ const Content = () => {
           </div>
 
           <div className=' w-[600px] h-[400px] flex flex-col rounded-lg justify-center items-end font-black text-[35px] overflow-clip '>
-            <div className=' w-[600px] text-[#FFF5E1]'>
+            <div className=' w-[600px] text-[#FFF5E1] pr-5'>
               <h1>Hey, I'm bestawIpa</h1>
               <p>I like to craft solid frontend product, turning ideas into real life products is my calling.</p>
             </div>

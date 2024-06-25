@@ -72,10 +72,33 @@ const Projectlalala = () => {
             </div>
           </div>
         ):(
-          <div className='mt-12 min-w-[600px]  flex flex-col items-center justify-center'>
-            <div className='flex justify-center mb-12'>
-             <h1 className='text-[40px] font-bold text-[#F5F7F8]'>LALALA-SHOP</h1>
+          <div className='mt-12 flex flex-col items-center justify-center'>
+            <div className=' max-w-[600px]'>
+              <div className='flex justify-center mb-12'>
+                <h1 className='text-[40px] font-bold text-[#141E46]'>LALALA-SHOP</h1>
+              </div>
+
+              <div className=' max-w-[370px] mx-auto font-semibold mt-6 text-[20px] text-[#F5F7F8]'>
+                <p>LALALA-SHOP is an online shopping platform designed to offer a wide range of products, including electronics, apparel, and household items. 
+                  The platform aims to provide a seamless shopping experience with user-friendly navigation and a secure checkout process.</p>
+                <p className=' mt-4 text-[25px] text-[#141E46]'>Features</p>
+                <ul className=' '>
+                  <li>- Homepage</li>
+                  <li>- Product Listing</li>
+                  <li>- Product Details</li>
+                  <li>- Category Product</li>
+                  <li>- Shopping Cart</li>
+                  <li>- Checkout Process</li>
+                  <li>- Admin Role</li>
+                  <li>- User Registration and Login System</li>
+                </ul>
+                <div className=' mt-4 flex flex-col'>
+                  <p>You can use this template as a starting point and modify it according to your specific needs</p>
+                  <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' text-[#2B2A4C]'>bestawlpa</Link></p>
+                </div>
+              </div>
             </div>
+            
             
             <div className="grid grid-cols-1 gap-5 my-10 mx-auto max-w-[600px]">
               {images.map((src, index) => (

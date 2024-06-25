@@ -18,7 +18,7 @@ const Contact = () => {
           </div>
 
           <div className=" dot mt-16 relative flex justify-center w-full">
-            <div className=" w-[200px] h-[200px] bg-[#002B5A] rounded-full flex justify-center items-center">
+            <div className=" w-[150px] h-[150px] bg-[#002B5A] rounded-full flex justify-center items-center">
               
             </div>
           </div>

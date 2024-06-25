@@ -17,7 +17,7 @@ const Contact = () => {
             <h1><EmailIcon /><span className=" ml-2 text-red-700">apiwat.aunna@gmail.com</span></h1>
           </div>
 
-          <div className=" dot mt-16 relative flex justify-start w-full">
+          <div className=" dot mt-16 relative flex justify-center w-full">
             <div className=" w-[200px] h-[200px] bg-[#002B5A] rounded-full flex justify-center items-center">
               
             </div>

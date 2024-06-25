@@ -1,97 +1,200 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Header from '../components/Header';
 import { useMediaQuery } from 'react-responsive';
 
 const Projectlalala = () => {
   const isPC = useMediaQuery({ minWidth: 1024 });
+  // const [isFullScreen, setIsFullScreen] = useState(false);
+  // const [currentImageIndex, setCurrentImageIndex] = useState(null);
+  // const images = [
+  //   '/lalala/home-toship.png',
+  //   '',
+  // ];
+
+  // const handleImageClick = (index) => {
+  //   setIsFullScreen(true);
+  //   setCurrentImageIndex(index);
+  // };
+
+  // const handleCloseFullScreen = () => {
+  //   setIsFullScreen(false);
+  //   setCurrentImageIndex(null);
+  // };
+
+  // const handleKeyDown = (event) => {
+  //   if (isFullScreen && event.key === 'Escape') {
+  //     handleCloseFullScreen();
+  //   }
+  // };
+
+  // React.useEffect(() => {
+  //   document.addEventListener('keydown', handleKeyDown);
+
+  //   return () => document.removeEventListener('keydown', handleKeyDown);
+  // }, [isFullScreen]); 
+
 
   return (
     <div className={`${isPC ? 'min-w-[80vw] max-w-[1200px] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px] '} `}>
       <Header />
       {isPC? (
-        <div>
-          <div id="gallery" className="relative w-full mt-[60px]" data-carousel="slide ">
-    
-            <div className="relative h-[430px] overflow-hidden rounded-lg ">
-         
-              
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="/public/home-page.png" className="absolute block w-[1000px] h-[400px] rounded-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-              </div>
-
-              <div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="/public/profile.png" className="rounded-xl absolute block w-[1000px] h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-              </div>
-
-        
-
-            </div>
-    
-            <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span className="sr-only">Previous</span>
-              </span>
-            </button>
-
-            <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span className="sr-only">Next</span>
-              </span>
-            </button>
+        <div className=' mt-24'>
+          <div className=' flex justify-center mb-12'>
+            <h1 className=' text-[40px] font-bold text-[#F5F7F8]'>LALALA-SHOP</h1>
           </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-10">
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-page.png" alt="Gallery image" />
+            </div>
 
-          <div>
-            <img src="/pf.png" alt="" width={100} height={100} />
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-register.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-login.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-category.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-cart.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-detail.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-detail-addbtn.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-checkout.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-topay.png" alt="Gallery image" />
+            </div>
+
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-pay.png" alt="Gallery image" />
+            </div>
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-toship.png" alt="Gallery image" />
+            </div>
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-toreceive.png" alt="Gallery image" />
+            </div>
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-profile.png" alt="Gallery image" />
+            </div>
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-admin-toship.png" alt="Gallery image" />
+            </div>
+            <div>
+              <img class="h-[230px] w-[370px] rounded-lg" src="/lalala/home-admin-toreceive.png" alt="Gallery image" />
+            </div>
           </div>
         </div>
-      ) : (
-        <div>
-          <div id="gallery" className="relative w-full mt-[60px]" data-carousel="slide ">
-    
-            <div className="relative h-[430px] overflow-hidden rounded-lg ">
-         
-              
-<div className="hidden duration-700 ease-in-out" data-carousel-item>
-  <img src="/home-page.png" className="absolute block w-[1000px] h-[400px] rounded-xl -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-</div>
-
-<div className="hidden duration-700 ease-in-out" data-carousel-item="active">
-  <img src="profile.png" className="rounded-xl absolute block w-[1000px] h-[400px] -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt=""/>
-</div>
-
-
+      ):(
+        <div className=' mt-12'>
+          <div className=' flex justify-center mb-12'>
+            <h1 className=' text-[40px] font-bold text-[#F5F7F8]'>LALALA-SHOP</h1>
+          </div>
+          <div class="grid grid-cols-1 gap-5 my-10">
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-page.png" alt="Gallery image" />
             </div>
-    
-            <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span className="sr-only">Previous</span>
-              </span>
-            </button>
 
-            <button type="button" className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span className="sr-only">Next</span>
-              </span>
-            </button>
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-register.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-login.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-category.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-cart.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-detail.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-detail-addbtn.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-checkout.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-topay.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-pay.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-toship.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-toreceive.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-profile.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-admin-toship.png" alt="Gallery image" />
+            </div>
+
+            <div className=' flex justify-center'>
+              <img className="h-[300px] w-[600px] rounded-lg" src="/lalala/home-admin-toreceive.png" alt="Gallery image" />
+            </div>
           </div>
         </div>
       )}
-      
-      
     </div>
-  )
+  );
 }
-
 export default Projectlalala;
+
+
+{/* <div className="grid grid-cols-2 gap-6">
+      {images.map((imageSrc, index) => (
+        <div key={index} className="relative">
+          <img
+            className="h-auto max-w-full rounded-lg cursor-pointer"
+            src={imageSrc}
+            alt="Gallery image"
+            onClick={() => handleImageClick(index)}
+          />
+        </div>
+      ))}
+
+      {isFullScreen && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-75 flex justify-center items-center"
+          onClick={handleCloseFullScreen}
+        >
+          <img
+            className="h-auto max-w-full object-contain rounded-lg"
+            src={images[currentImageIndex]}
+            alt="Full-screen image"
+          />
+        </div>
+      )} */}
+    // </div>

@@ -38,17 +38,17 @@ const About = () => {
               <h2 className=" font-extrabold text-[30px] text-[#FBF8DD]">SKILL</h2>
               <div className=" mt-10 text-[#E7D37F]  h-full ">
                 <div className=" flex justify-around min-w-[600px] h-[70px] text-[18px] font-bold ">
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">HTML</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">CSS</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Javascript</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">React</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">HTML</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">CSS</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Javascript</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">React</div>
                 </div>
                 
                 <div className=" flex justify-around min-w-[600px] h-[70px] text-[18px] font-bold my-8">
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Next.js</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Node.js</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Firebase</div>
-                  <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">MongoDb</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Next.js</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Node.js</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Firebase</div>
+                  <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">MongoDb</div>
                 </div> 
               </div>
             </div>
@@ -84,17 +84,17 @@ const About = () => {
                 <h2 className=" font-extrabold text-[30px] text-[#FBF8DD]">SKILL</h2>
                 <div className=" mt-10 text-[#E7D37F]  h-full text-[14px]">
                   <div className=" flex justify-around min-w-[400px] h-[50px]  font-bold ">
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">HTML</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">CSS</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Javascript</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">React</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">HTML</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">CSS</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Javascript</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">React</div>
                   </div>
                 
                   <div className=" flex justify-around min-w-[300px] h-[50px] ] font-bold my-8">
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Next.js</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Node.js</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">Firebase</div>
-                    <div className=" w-[20%] bg-[#365E32] rounded-lg flex justify-center items-center">MongoDb</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Next.js</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Node.js</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">Firebase</div>
+                    <div className=" w-[20%] bg-[#81A263] rounded-lg flex justify-center items-center">MongoDb</div>
                   </div> 
                 </div>
               </div>

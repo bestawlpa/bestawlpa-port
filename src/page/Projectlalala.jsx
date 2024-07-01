@@ -53,6 +53,12 @@ const Projectlalala = () => {
                   <li>- Admin Role</li>
                   <li>- User Registration and Login System</li>
                 </ul>
+                <p className=' mt-4 text-[28px] font-bold text-[#F1F7B5]'>Technology Used</p>
+                <ul className=' '>
+                  <li>- Frontend : <span className='text-[#2B2A4C]'>Next.js</span></li>
+                  <li>- Backend : <span className='text-[#2B2A4C]'>Node.js Express</span></li>
+                  <li>- Database : <span className='text-[#2B2A4C]'>MongoDB</span></li>
+                </ul>
                 <div className=' mt-4 flex flex-col'>
                   <p>You can use this template as a starting point and modify it according to your specific needs</p>
                   <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' font-semibold text-[#2B2A4C]'>bestawlpa</Link></p>
@@ -91,6 +97,12 @@ const Projectlalala = () => {
                   <li>- Checkout Process</li>
                   <li>- Admin Role</li>
                   <li>- User Registration and Login System</li>
+                </ul>
+                <p className=' mt-4 text-[28px] text-[#F1F7B5]'>Technology Used</p>
+                <ul className=' '>
+                  <li>- Frontend : <span className='text-[#2B2A4C]'>Next.js</span></li>
+                  <li>- Backend : <span className='text-[#2B2A4C]'>Node.js Express</span></li>
+                  <li>- Database : <span className='text-[#2B2A4C]'>MongoDB</span></li>
                 </ul>
                 <div className=' mt-4 flex flex-col'>
                   <p>You can use this template as a starting point and modify it according to your specific needs</p>

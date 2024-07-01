@@ -71,7 +71,7 @@ const Projectlalala = () => {
               <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-10">
                 {images.map((src,index) => (
                   <div key={index} onClick={() => handleClick(index)}>
-                    <img src={src} class="h-[230px] w-[370px] rounded-lg" alt="Gallery image"/>
+                    <img src={src} class="h-[230px] w-[370px] rounded-lg hover:cursor-pointer" alt="Gallery image"/>
                   </div>
                 ))}
              </div>

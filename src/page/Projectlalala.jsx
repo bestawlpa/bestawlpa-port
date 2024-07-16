@@ -1,12 +1,12 @@
-import React,{useState} from 'react';
-import Header from '../components/Header';
-import { useMediaQuery } from 'react-responsive';
-import { Link } from 'react-router-dom';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React, { useState } from "react";
+import Header from "../components/Header";
+import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Projectlalala = () => {
   const isPC = useMediaQuery({ minWidth: 1024 });
-  const [clickedItem, setClickedItem] = useState(null); 
+  const [clickedItem, setClickedItem] = useState(null);
 
   const images = [
     "/lalala/home-page.png",
@@ -25,116 +25,217 @@ const Projectlalala = () => {
     "/lalala/home-admin-toship.png",
     "/lalala/home-admin-toreceive.png",
   ];
-  
-  const handleClick = (index) => {
-    setClickedItem(clickedItem === index ? null : index); 
-  };
-  
-  return (
-    <div className={`${isPC ? 'min-w-[80vw] min-h-[120px]' : 'min-w-[100vw]  min-h-[50px] '} `}>
-      <Header />
-      {isPC? (
-          <div className=' mt-24 flex flex-col'>
-            <div className=' flex flex-col min-w-[1200px] items-center  mb-12'>
-              <div  className=' text-[50px] font-extrabold text-[#F1F7B5]'>
-                <h1>LALALA-SHOP</h1>
-              </div>
-              <div className=' max-w-[900px] font-semibold mt-6 text-[20px] text-[#F5F7F8]'>
-                <p>LALALA-SHOP is an online shopping platform designed to offer a wide range of products, including electronics, apparel, and household items. 
-                  The platform aims to provide a seamless shopping experience with user-friendly navigation and a secure checkout process.</p>
-                <p className=' mt-4 text-[28px] font-bold text-[#F1F7B5]'>Features</p>
-                <ul className=' '>
-                  <li>- Homepage</li>
-                  <li>- Product Listing</li>
-                  <li>- Product Details</li>
-                  <li>- Category Product</li>
-                  <li>- Shopping Cart</li>
-                  <li>- Checkout Process</li>
-                  <li>- Admin Role</li>
-                  <li>- User Registration and Login System</li>
-                </ul>
-                <p className=' mt-4 text-[28px] font-bold text-[#F1F7B5]'>Technology Used</p>
-                <ul className=' '>
-                  <li>- Frontend : <span className='text-[#2B2A4C]'>Next.js</span></li>
-                  <li>- Backend : <span className='text-[#2B2A4C]'>Node.js Express</span></li>
-                  <li>- Database : <span className='text-[#2B2A4C]'>MongoDB</span></li>
-                </ul>
-                <div className=' mt-4 flex flex-col'>
-                  <p>You can use this template as a starting point and modify it according to your specific needs</p>
-                  <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' font-semibold text-[#2B2A4C]'>bestawlpa</Link></p>
-                </div>
-              </div>
-            </div>
 
-          
-            <div className=' min-w-[1200px] flex justify-center'>
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-10">
-                {images.map((src,index) => (
-                  <div key={index} onClick={() => handleClick(index)}>
-                    <img src={src} class="h-[230px] w-[370px] rounded-lg hover:cursor-pointer" alt="Gallery image"/>
-                  </div>
-                ))}
-             </div>
+  const handleClick = (index) => {
+    setClickedItem(clickedItem === index ? null : index);
+  };
+
+  const handleNext = () => {
+    setClickedItem((prev) => (prev + 1) % images.length);
+  };
+
+  const handlePrevious = () => {
+    setClickedItem((prev) => (prev - 1 + images.length) % images.length);
+  };
+  return (
+    <div
+      className={`${
+        isPC ? "min-w-[80vw] min-h-[120px]" : "min-w-[100vw]  min-h-[50px] "
+      } `}
+    >
+      <Header />
+      {isPC ? (
+        <div className=" mt-24 flex flex-col">
+          <div className=" flex flex-col min-w-[1200px] items-center  mb-12">
+            <div className=" text-[50px] font-extrabold text-[#F1F7B5]">
+              <h1>LALALA-SHOP</h1>
+            </div>
+            <div className=" max-w-[900px] font-semibold mt-6 text-[20px] text-[#F5F7F8]">
+              <p>
+                LALALA-SHOP is an online shopping platform designed to offer a
+                wide range of products, including electronics, apparel, and
+                household items. The platform aims to provide a seamless
+                shopping experience with user-friendly navigation and a secure
+                checkout process.
+              </p>
+              <p className=" mt-4 text-[28px] font-bold text-[#F1F7B5]">
+                Features
+              </p>
+              <ul className=" ">
+                <li>- Homepage</li>
+                <li>- Product Listing</li>
+                <li>- Product Details</li>
+                <li>- Category Product</li>
+                <li>- Shopping Cart</li>
+                <li>- Checkout Process</li>
+                <li>- Admin Role</li>
+                <li>- User Registration and Login System</li>
+              </ul>
+              <p className=" mt-4 text-[28px] font-bold text-[#F1F7B5]">
+                Technology Used
+              </p>
+              <ul className=" ">
+                <li>
+                  - Frontend : <span className="text-[#2B2A4C]">Next.js</span>
+                </li>
+                <li>
+                  - Backend :{" "}
+                  <span className="text-[#2B2A4C]">Node.js Express</span>
+                </li>
+                <li>
+                  - Database : <span className="text-[#2B2A4C]">MongoDB</span>
+                </li>
+              </ul>
+              <div className=" mt-4 flex flex-col">
+                <p>
+                  You can use this template as a starting point and modify it
+                  according to your specific needs
+                </p>
+                <p className=" text-[#FCE09B]">
+                  <GitHubIcon />{" "}
+                  <Link
+                    to="https://github.com/bestawlpa/lalala-shop"
+                    className=" font-semibold text-[#2B2A4C]"
+                  >
+                    bestawlpa
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
-        ):(
-          <div className='mt-12 flex flex-col items-center justify-center'>
-            <div className=' max-w-[600px]'>
-              <div className='flex justify-center mb-12'>
-                <h1 className='text-[40px] font-bold text-[#F1F7B5]'>LALALA-SHOP</h1>
-              </div>
 
-              <div className=' max-w-[370px] mx-auto font-semibold mt-6 text-[20px] text-[#F5F7F8]'>
-                <p>LALALA-SHOP is an online shopping platform designed to offer a wide range of products, including electronics, apparel, and household items. 
-                  The platform aims to provide a seamless shopping experience with user-friendly navigation and a secure checkout process.</p>
-                <p className=' mt-4 text-[28px] text-[#F1F7B5]'>Features</p>
-                <ul className=' '>
-                  <li>- Homepage</li>
-                  <li>- Product Listing</li>
-                  <li>- Product Details</li>
-                  <li>- Category Product</li>
-                  <li>- Shopping Cart</li>
-                  <li>- Checkout Process</li>
-                  <li>- Admin Role</li>
-                  <li>- User Registration and Login System</li>
-                </ul>
-                <p className=' mt-4 text-[28px] text-[#F1F7B5]'>Technology Used</p>
-                <ul className=' '>
-                  <li>- Frontend : <span className='text-[#2B2A4C]'>Next.js</span></li>
-                  <li>- Backend : <span className='text-[#2B2A4C]'>Node.js Express</span></li>
-                  <li>- Database : <span className='text-[#2B2A4C]'>MongoDB</span></li>
-                </ul>
-                <div className=' mt-4 flex flex-col'>
-                  <p>You can use this template as a starting point and modify it according to your specific needs</p>
-                  <p className=' text-[#FCE09B]'><GitHubIcon />  <Link to="https://github.com/bestawlpa/lalala-shop" className=' text-[#2B2A4C]'>bestawlpa</Link></p>
-                </div>
-              </div>
-            </div>
-            
-            
-            <div className="grid grid-cols-1 gap-5 my-10 mx-auto max-w-[600px]">
+          <div className=" min-w-[1200px] flex justify-center">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-10">
               {images.map((src, index) => (
-                  <div key={index} className='flex justify-center' >
-                    <img className="h-[250px] w-[370px] rounded-lg cursor-pointer" src={src} alt="Gallery image" />
-                  </div>
+                <div key={index} onClick={() => handleClick(index)}>
+                  <img
+                    src={src}
+                    class="h-[230px] w-[370px] rounded-lg hover:cursor-pointer"
+                    alt="Gallery image"
+                  />
+                </div>
               ))}
             </div>
           </div>
-        )}
+        </div>
+      ) : (
+        <div className="mt-12 flex flex-col items-center justify-center">
+          <div className=" max-w-[600px]">
+            <div className="flex justify-center mb-12">
+              <h1 className="text-[40px] font-bold text-[#F1F7B5]">
+                LALALA-SHOP
+              </h1>
+            </div>
 
-        {/* fullscreen */}
+            <div className=" max-w-[370px] mx-auto font-semibold mt-6 text-[20px] text-[#F5F7F8]">
+              <p>
+                LALALA-SHOP is an online shopping platform designed to offer a
+                wide range of products, including electronics, apparel, and
+                household items. The platform aims to provide a seamless
+                shopping experience with user-friendly navigation and a secure
+                checkout process.
+              </p>
+              <p className=" mt-4 text-[28px] text-[#F1F7B5]">Features</p>
+              <ul className=" ">
+                <li>- Homepage</li>
+                <li>- Product Listing</li>
+                <li>- Product Details</li>
+                <li>- Category Product</li>
+                <li>- Shopping Cart</li>
+                <li>- Checkout Process</li>
+                <li>- Admin Role</li>
+                <li>- User Registration and Login System</li>
+              </ul>
+              <p className=" mt-4 text-[28px] text-[#F1F7B5]">
+                Technology Used
+              </p>
+              <ul className=" ">
+                <li>
+                  - Frontend : <span className="text-[#2B2A4C]">Next.js</span>
+                </li>
+                <li>
+                  - Backend :{" "}
+                  <span className="text-[#2B2A4C]">Node.js Express</span>
+                </li>
+                <li>
+                  - Database : <span className="text-[#2B2A4C]">MongoDB</span>
+                </li>
+              </ul>
+              <div className=" mt-4 flex flex-col">
+                <p>
+                  You can use this template as a starting point and modify it
+                  according to your specific needs
+                </p>
+                <p className=" text-[#FCE09B]">
+                  <GitHubIcon />{" "}
+                  <Link
+                    to="https://github.com/bestawlpa/lalala-shop"
+                    className=" text-[#2B2A4C]"
+                  >
+                    bestawlpa
+                  </Link>
+                </p>
+              </div>
+            </div>
+          </div>
 
-        {clickedItem !== null && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50" onClick={() => setClickedItem(null)}>
-          <img className="max-h-[90vh] max-w-[80vw] rounded-lg" src={images[clickedItem]} alt="Full screen" />
+          <div className="grid grid-cols-1 gap-5 my-10 mx-auto max-w-[600px]">
+            {images.map((src, index) => (
+              <div key={index} className="flex justify-center">
+                <img
+                  className="h-[250px] w-[370px] rounded-lg cursor-pointer"
+                  src={src}
+                  alt="Gallery image"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* fullscreen */}
+
+      {/* {clickedItem !== null && (
+        <div
+          className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50"
+          onClick={() => setClickedItem(null)}
+        >
+          <img
+            className="max-h-[90vh] max-w-[80vw] rounded-lg"
+            src={images[clickedItem]}
+            alt="Full screen"
+          />
+        </div>
+      )} */}
+
+      {clickedItem !== null && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+          <button
+            onClick={handlePrevious}
+            className="absolute left-10 text-white text-4xl font-bold"
+          >
+            {"<"}
+          </button>
+          <img
+            className="max-h-[90vh] max-w-[80vw] rounded-lg"
+            src={images[clickedItem]}
+            alt="Full screen"
+          />
+          <button
+            onClick={handleNext}
+            className="absolute right-10 text-white text-4xl font-bold"
+          >
+            {">"}
+          </button>
+          <button
+            onClick={() => setClickedItem(null)}
+            className="absolute top-10 right-10 text-white text-4xl font-bold"
+          >
+            {"X"}
+          </button>
         </div>
       )}
     </div>
   );
-}
+};
 export default Projectlalala;
-
-
-
-
-
